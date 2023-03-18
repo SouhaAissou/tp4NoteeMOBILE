@@ -53,8 +53,6 @@ public class MainActivity2 extends AppCompatActivity {
         recyclerView = findViewById(R.id.recycler_view);
         notes = new ArrayList<Item>();
         recyclerView.setLayoutManager(new LinearLayoutManager(this,LinearLayoutManager.VERTICAL,false));
-//        recyclerView.setAdapter(new noteadapter(notes,this));
-//
 
         dialog = new Dialog(this);
         dialog.setContentView(R.layout.dialogue);
@@ -63,7 +61,7 @@ public class MainActivity2 extends AppCompatActivity {
         btnValider.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-//                notes.add(new Item("Amira Mekki",txt.getText().toString(),R.drawable.girl));
+
 
                 notes.add(new Item("AISSOU Souha",txt.getText().toString(),R.drawable.pfp));
                 recyclerView.setAdapter(new noteadapter(notes,MainActivity2.this));
